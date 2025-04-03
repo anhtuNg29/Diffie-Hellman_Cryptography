@@ -1,0 +1,72 @@
+DIFFIE-HELLMAN KEY EXCHANGE - 2025-04-02 16:33:02
+======================================================================
+
+
+CÁC THAM SỐ CÔNG KHAI
+----------------------------------------------------------------------
+Số nguyên tố q: 353
+Căn nguyên thủy α: 3
+----------------------------------------------------------------------
+
+
+CÁC KHÓA RIÊNG
+----------------------------------------------------------------------
+Khóa riêng của A (XA): 97
+Khóa riêng của B (XB): 233
+----------------------------------------------------------------------
+
+Tính khóa công khai Y = α^X mod q:
+  Y = 3^97 mod 353
+  Y = 40
+
+Tính khóa công khai Y = α^X mod q:
+  Y = 3^233 mod 353
+  Y = 248
+
+
+CÁC KHÓA CÔNG KHAI
+----------------------------------------------------------------------
+Khóa công khai của A (YA): 40
+Khóa công khai của B (YB): 248
+----------------------------------------------------------------------
+
+Tính khóa chung K = Y^X mod q:
+  K = 248^97 mod 353
+  K = 160
+
+Tính khóa chung K = Y^X mod q:
+  K = 40^233 mod 353
+  K = 160
+
+
+KHÓA CHUNG
+----------------------------------------------------------------------
+Khóa chung tính bởi A: 160
+Khóa chung tính bởi B: 160
+
+✓ Hai khóa chung bằng nhau, quá trình trao đổi khóa thành công!
+----------------------------------------------------------------------
+
+
+TÓM TẮT QUÁ TRÌNH TRAO ĐỔI KHÓA DIFFIE-HELLMAN
+======================================================================
+Bước 1: Xác định các tham số công khai
+  - Số nguyên tố q: 353
+  - Căn nguyên thủy α: 3
+
+Bước 2: Tạo khóa riêng và tính khóa công khai
+  - A chọn khóa riêng XA = 97
+  - A tính khóa công khai YA = α^XA mod q = 3^97 mod 353 = 40
+  - B chọn khóa riêng XB = 233
+  - B tính khóa công khai YB = α^XB mod q = 3^233 mod 353 = 248
+
+Bước 3: Trao đổi khóa công khai
+  - A gửi YA cho B
+  - B gửi YB cho A
+
+Bước 4: Tính khóa chung
+  - A tính K = YB^XA mod q = 248^97 mod 353 = 160
+  - B tính K = YA^XB mod q = 40^233 mod 353 = 160
+
+Khóa chung cuối cùng: 160
+======================================================================
